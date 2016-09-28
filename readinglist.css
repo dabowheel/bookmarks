@@ -1,0 +1,19 @@
+#name {
+  display: none;
+  width: 400px;
+}
+#modalName {
+  width: 500px;
+}
+#url {
+  width: 500px;
+}
+#modalURL {
+  width: 500px;
+}
+#acceptAdd {
+  display: none;
+}
+#cancelAdd {
+  display: none;
+}
