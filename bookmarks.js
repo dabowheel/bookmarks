@@ -1,16 +1,3 @@
-
-var list;
-
-function startup() {
-  // load the list
-  list = new List();
-  if (localStorage.readingList) {
-    list.loadObject(JSON.parse(localStorage.readingList));
-  }
-
-  drawList();
-}
-
 function drawList() {
   var ul = document.getElementById("list");
 
@@ -121,6 +108,4 @@ function Item(description, url) {
   this.url = url;
 }
 
-
-// startup
-startup();
+export { List };
