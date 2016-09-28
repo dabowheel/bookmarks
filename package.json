@@ -1,0 +1,23 @@
+{
+  "name": "bookmarks",
+  "version": "1.0.0",
+  "description": "Organize bookmarks",
+  "main": "bookmarks.js",
+  "dependencies": {
+    "vue": "^1.0.28"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabowheel/bookmarks.git"
+  },
+  "author": "Miguel Provencio <miguel.a.provencio@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dabowheel/bookmarks/issues"
+  },
+  "homepage": "https://github.com/dabowheel/bookmarks#readme"
+}
