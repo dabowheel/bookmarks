@@ -1,13 +1,3 @@
-console.log("before vue");
-
-new Vue({
-  el: "#app",
-  data: {
-    title: "Bookmarks"
-  }
-});
-
-console.log("after vue");
 
 var list;
 
