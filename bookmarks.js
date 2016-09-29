@@ -1,25 +1,3 @@
-function clickAdd() {
-  var url = document.getElementById("url").value;
-  if (url) {
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-      if (request.readyState == XMLHttpRequest.DONE) {
-        if (request.status === 200) {
-          var parser = new DOMParser();
-          var doc = parser.parseFromString(request.responseText, "text/html");
-          var name = doc.title;
-          var nameElement = document.getElementById("modalName");
-          nameElement.value = name;
-          var urlElement = document.getElementById("modalURL");
-          urlElement.value = url;
-          $('#myModal').modal()
-        }
-      }
-    }
-    request.open("GET", url, true);
-    request.send(null);
-  }
-}
 
 function clickAcceptAdd() {
   var nameElement = document.getElementById("modalName");
