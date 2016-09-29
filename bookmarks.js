@@ -1,22 +1,3 @@
-
-function clickAcceptAdd() {
-  var nameElement = document.getElementById("modalName");
-  var urlElement = document.getElementById("modalURL");
-  var item = new Item(nameElement.value, urlElement.value);
-  list.addItem(item);
-  localStorage.readingList = JSON.stringify(list);
-  $("#myModal").modal("hide");
-  redrawList();
-}
-document.getElementById("modalAccept").onclick = clickAcceptAdd;
-
-function clickCancelAdd() {
-  $("#myModal").modal("hide");
-  var urlElement = document.getElementById("url");
-  urlElement.select();
-}
-document.getElementById("modalCancel").onclick = clickCancelAdd;
-
 // List
 function List() {
   this.arr = [];
@@ -49,4 +30,4 @@ function Item(description, url) {
   this.url = url;
 }
 
-export { List };
+export { List, Item };
