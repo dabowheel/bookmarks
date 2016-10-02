@@ -5,8 +5,12 @@
       {{item.description}} - <a href="{{item.url}}">{{item.url}}</a>
     </li>
     <li>
-      <input v-model="url" id="url" type="text" placeholder="Enter a URL" />
-      <button v-on:click="clickAdd" type="button" class="btn">Add</button>
+      <form class="form-inline">
+        <div class="form-group">
+          <input v-model="url" id="url" class="form-control" type="text" placeholder="Enter a URL" />
+        </div>
+        <button v-on:click="clickAdd" id="add" type="button" class="btn btn-default">Add</button>
+      </form>
   </ul>
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
@@ -30,7 +34,7 @@
 </template>
 
 <script>
-import { List, Item } from "./bookmarks.js";
+import { List, Item } from "./list.js";
 
 export default {
   data() {
@@ -46,6 +50,9 @@ export default {
     if (localStorage.readingList) {
       this.list.loadObject(JSON.parse(localStorage.readingList));
     }
+    this.$nextTick(function () {
+      document.getElementById("url").focus();
+    });
   },
   methods: {
     clickAdd() {
@@ -103,5 +110,8 @@ export default {
 }
 #cancelAdd {
   display: none;
+}
+.list-input {
+  display: inline;
 }
 </style>
