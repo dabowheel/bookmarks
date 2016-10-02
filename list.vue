@@ -3,6 +3,8 @@
   <ul id="list">
     <li v-for="item in list.arr">
       {{item.description}} - <a href="{{item.url}}">{{item.url}}</a>
+      <button type="button" class="btn btn-default btn-xs" title="Edit"><span class="glyphicon glyphicon-pencil"></span></button>
+      <button type="button" class="btn btn-default btn-xs" title="Remove"><span class="glyphicon glyphicon-remove"></span></button>
     </li>
     <li>
       <form class="form-inline">
