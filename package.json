@@ -4,6 +4,7 @@
   "description": "Organize bookmarks",
   "main": "bookmarks.js",
   "dependencies": {
+    "express": "^4.14.0",
     "vue": "^1.0.28"
   },
   "devDependencies": {

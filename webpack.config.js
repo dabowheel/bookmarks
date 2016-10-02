@@ -5,7 +5,7 @@ module.exports = {
   // where to place the compiled bundle
   output: {
     path: __dirname,
-    filename: 'build.js'
+    filename: 'public/build.js'
   },
   module: {
     // `loaders` is an array of loaders to use.
